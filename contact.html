@@ -74,29 +74,11 @@
       </div>
     </div>
 
-    <!-- form (visual only; no backend by design — call or email instead) -->
+    <!-- call block (replaces the old visual-only form; a CRM-connected form comes later) -->
     <div class="form-card">
-      <h2>Send us a note</h2>
-      <form onsubmit="return false" novalidate>
-        <div class="form-row">
-          <label class="field">Your name
-            <input type="text" name="name" placeholder="First and last" autocomplete="name">
-          </label>
-          <label class="field">Phone or email
-            <input type="text" name="contact" placeholder="Best way to reach you">
-          </label>
-        </div>
-        <label class="field">What do you need?
-          <input type="text" name="need" placeholder="e.g. a 10&times;20 unit, covered boat parking, a balance question">
-        </label>
-        <label class="field">Message
-          <textarea name="message" rows="5" placeholder="Tell us a little more&hellip;"></textarea>
-        </label>
-        <div class="form-submit">
-          <button type="button" class="btn-send">Send message</button>
-          <span class="sub">In a hurry? Just call &mdash; <a href="tel:8633246591">863-324-6591</a></span>
-        </div>
-      </form>
+      <h2>Get in touch</h2>
+      <p class="val">Call and you'll talk to a person &mdash; not a menu, not a form that goes nowhere.</p>
+      <a class="btn btn-amber" href="tel:8633246591">Call 863-324-6591</a>
     </div>
 
   </div>
