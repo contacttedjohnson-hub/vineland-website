@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;1,500&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>body{margin:0;background:#f5f7f9;font-family:'Public Sans',sans-serif}a{color:#1e3a5f}a:hover{color:#b7791f}.nav-drop{display:none}.nav-pay:hover .nav-drop{display:flex}</style>
+</helmet>
+
+<div data-screen-label="About" style="min-height:100vh;background:#f5f7f9;color:#33404f;display:flex;flex-direction:column">
+
+<!-- header -->
+<header style="background:#16293f">
+  <div style="max-width:1140px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:20px 32px;flex-wrap:wrap">
+    <a href="Home.dc.html" style="display:flex;align-items:baseline;gap:12px;text-decoration:none">
+      <span style="font:600 21px 'Lora',serif;color:#fff">Vineland Development</span>
+      <span style="font:400 11.5px 'Public Sans',sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#c9a45c">Est. 1972</span>
+    </a>
+    <nav style="display:flex;align-items:center;gap:26px;font:500 14px 'Public Sans',sans-serif;flex-wrap:wrap">
+      <a href="Spaces %26 Parking.dc.html" style="color:#c3d0e0;text-decoration:none" style-hover="color:#fff">Spaces &amp; Parking</a>
+      <div class="nav-pay" style="position:relative;display:flex">
+        <a href="How to Pay.dc.html" style="color:#c3d0e0;text-decoration:none;display:flex;align-items:center;gap:6px" style-hover="color:#fff">How to Pay <span style="font-size:9px;color:#c9a45c">▼</span></a>
+        <div class="nav-drop" style="position:absolute;top:100%;left:50%;transform:translateX(-50%);padding-top:14px;flex-direction:column;z-index:50">
+          <div style="background:#16293f;border:1px solid #2c4a70;border-top:2px solid #c9a45c;border-radius:0 0 6px 6px;box-shadow:0 12px 28px rgba(10,20,34,.4);min-width:250px;display:flex;flex-direction:column;padding:8px 0">
+            <a href="How to Pay.dc.html#bill-pay" style="padding:11px 18px;color:#c3d0e0;text-decoration:none;font:500 14px 'Public Sans',sans-serif" style-hover="background:#1e3a5f;color:#fff">Bank bill pay</a>
+            <a href="How to Pay.dc.html#card" style="padding:11px 18px;color:#c3d0e0;text-decoration:none;font:500 14px 'Public Sans',sans-serif" style-hover="background:#1e3a5f;color:#fff">Pay online by card</a>
+            <a href="How to Pay.dc.html#office" style="padding:11px 18px;color:#c3d0e0;text-decoration:none;font:500 14px 'Public Sans',sans-serif" style-hover="background:#1e3a5f;color:#fff">At the office or by mail</a>
+          </div>
+        </div>
+      </div>
+      <a href="About.dc.html" style="color:#fff;text-decoration:none;border-bottom:2px solid #c9a45c;padding-bottom:2px">About</a>
+      <a href="Contact.dc.html" style="color:#c3d0e0;text-decoration:none" style-hover="color:#fff">Contact</a>
+      <a href="tel:8633246591" style="color:#fff;text-decoration:none;font:700 15px 'Public Sans',sans-serif;border-bottom:2px solid #b7791f;padding-bottom:2px">863-324-6591</a>
+    </nav>
+  </div>
+</header>
+
+<!-- page title -->
+<div style="background:#1e3a5f">
+  <div style="max-width:1140px;margin:0 auto;padding:56px 32px 52px;display:flex;flex-direction:column;gap:16px">
+    <div style="width:56px;height:3px;background:#c9a45c"></div>
+    <h1 style="margin:0;font:600 40px/1.2 'Lora',serif;color:#fff">A family business since 1972</h1>
+  </div>
+</div>
+
+<!-- story -->
+<div style="max-width:1140px;margin:0 auto;padding:56px 32px 64px;width:100%;box-sizing:border-box;display:grid;grid-template-columns:7fr 5fr;gap:44px;align-items:start">
+  <div style="display:flex;flex-direction:column;gap:18px">
+    <p style="margin:0;font:400 17px/1.75 'Public Sans',sans-serif;color:#4c5a6b">Vineland Development has been renting space on Executive Road since 1972 — over fifty years, same family, same phone number habit: when you call, one of us picks up.</p>
+    <p style="margin:0;font:400 17px/1.75 'Public Sans',sans-serif;color:#4c5a6b">What started as a handful of buildings has grown to 134 drive-up units across seven buildings and 75 parking spaces. But it still runs the way a small-town family business should: month-to-month rentals, plain dealing, and tenants who stay for years because it works for them.</p>
+    <p style="margin:0;font:400 17px/1.75 'Public Sans',sans-serif;color:#4c5a6b">Some of our tenants build cabinets. Some run their trade out of a bay. Some just need a dry place for the boat or the extra furniture. Whatever the reason, we'll treat you like a neighbor — because around here, you probably are.</p>
+    <div style="margin-top:10px;border-top:1px solid #dde4ec;padding-top:24px;display:flex;align-items:center;gap:20px;flex-wrap:wrap">
+      <a href="tel:8633246591" style="background:#1e3a5f;color:#fff;text-decoration:none;padding:14px 26px;border-radius:4px;font:600 16px 'Public Sans',sans-serif" style-hover="background:#16293f;color:#fff">Call us — 863-324-6591</a>
+      <span style="font:italic 400 14px 'Lora',serif;color:#8b7c5e">Monday–Friday, 9 to 4</span>
+    </div>
+  </div>
+  <div style="display:flex;flex-direction:column;gap:16px">
+    <div style="height:280px;border-radius:6px;overflow:hidden"><x-import component-from-global-scope="image-slot" from="./image-slot.js" id="about-facility" shape="rect" placeholder="Drop photo: the facility" hint-size="100%,280px"></x-import></div>
+    <div style="height:200px;border-radius:6px;overflow:hidden"><x-import component-from-global-scope="image-slot" from="./image-slot.js" id="about-family" shape="rect" placeholder="Drop photo: the family / office" hint-size="100%,200px"></x-import></div>
+  </div>
+</div>
+
+<!-- footer -->
+<footer style="background:#16293f;margin-top:auto">
+  <div style="max-width:1140px;margin:0 auto;padding:44px 32px 40px;display:grid;grid-template-columns:2fr 1fr 1fr;gap:36px">
+    <div style="display:flex;flex-direction:column;gap:8px">
+      <span style="font:600 19px 'Lora',serif;color:#fff">Vineland Development</span>
+      <span style="font:400 13.5px/1.6 'Public Sans',sans-serif;color:#8fa3bd">Flex space, storage, and parking in Winter Haven, Florida. Family-run since 1972.</span>
+    </div>
+    <nav style="display:flex;flex-direction:column;gap:9px;font:500 14px 'Public Sans',sans-serif">
+      <a href="Spaces %26 Parking.dc.html" style="color:#c3d0e0;text-decoration:none" style-hover="color:#fff">Spaces &amp; Parking</a>
+      <a href="How to Pay.dc.html" style="color:#c3d0e0;text-decoration:none" style-hover="color:#fff">How to Pay</a>
+      <a href="About.dc.html" style="color:#c3d0e0;text-decoration:none" style-hover="color:#fff">About</a>
+      <a href="Contact.dc.html" style="color:#c3d0e0;text-decoration:none" style-hover="color:#fff">Contact</a>
+    </nav>
+    <div style="display:flex;flex-direction:column;gap:9px;font:400 14px/1.5 'Public Sans',sans-serif;color:#c3d0e0">
+      <a href="tel:8633246591" style="color:#fff;text-decoration:none;font-weight:700">863-324-6591</a>
+      <span>1771 Executive Rd<br>Winter Haven, FL 33884</span>
+      <span>Mon–Fri 9am–4pm</span>
+    </div>
+  </div>
+</footer>
+</div>
+</x-dc>
+</body>
+</html>

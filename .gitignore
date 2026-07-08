@@ -1,0 +1,16 @@
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*~
+
+# Editor folders
+.vscode/
+.idea/
+
+# Node (not used by this static site, but keep it clean if tooling shows up)
+node_modules/
+npm-debug.log*
+
+# Do NOT ignore anything the site needs — pages, css/, js/, images/, design/ are all tracked.

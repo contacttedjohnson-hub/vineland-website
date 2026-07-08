@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;1,500&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>body{margin:0;background:#f5f7f9;font-family:'Public Sans',sans-serif}a{color:#1e3a5f}a:hover{color:#b7791f}input::placeholder,textarea::placeholder{color:#9aa7b6}.nav-drop{display:none}.nav-pay:hover .nav-drop{display:flex}</style>
+</helmet>
+
+<div data-screen-label="Contact" style="min-height:100vh;background:#f5f7f9;color:#33404f;display:flex;flex-direction:column">
+
+<!-- header -->
+<header style="background:#16293f">
+  <div style="max-width:1140px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:20px 32px;flex-wrap:wrap">
+    <a href="Home.dc.html" style="display:flex;align-items:baseline;gap:12px;text-decoration:none">
+      <span style="font:600 21px 'Lora',serif;color:#fff">Vineland Development</span>
+      <span style="font:400 11.5px 'Public Sans',sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#c9a45c">Est. 1972</span>
+    </a>
+    <nav style="display:flex;align-items:center;gap:26px;font:500 14px 'Public Sans',sans-serif;flex-wrap:wrap">
+      <a href="Spaces %26 Parking.dc.html" style="color:#c3d0e0;text-decoration:none" style-hover="color:#fff">Spaces &amp; Parking</a>
+      <div class="nav-pay" style="position:relative;display:flex">
+        <a href="How to Pay.dc.html" style="color:#c3d0e0;text-decoration:none;display:flex;align-items:center;gap:6px" style-hover="color:#fff">How to Pay <span style="font-size:9px;color:#c9a45c">▼</span></a>
+        <div class="nav-drop" style="position:absolute;top:100%;left:50%;transform:translateX(-50%);padding-top:14px;flex-direction:column;z-index:50">
+          <div style="background:#16293f;border:1px solid #2c4a70;border-top:2px solid #c9a45c;border-radius:0 0 6px 6px;box-shadow:0 12px 28px rgba(10,20,34,.4);min-width:250px;display:flex;flex-direction:column;padding:8px 0">
+            <a href="How to Pay.dc.html#bill-pay" style="padding:11px 18px;color:#c3d0e0;text-decoration:none;font:500 14px 'Public Sans',sans-serif" style-hover="background:#1e3a5f;color:#fff">Bank bill pay</a>
+            <a href="How to Pay.dc.html#card" style="padding:11px 18px;color:#c3d0e0;text-decoration:none;font:500 14px 'Public Sans',sans-serif" style-hover="background:#1e3a5f;color:#fff">Pay online by card</a>
+            <a href="How to Pay.dc.html#office" style="padding:11px 18px;color:#c3d0e0;text-decoration:none;font:500 14px 'Public Sans',sans-serif" style-hover="background:#1e3a5f;color:#fff">At the office or by mail</a>
+          </div>
+        </div>
+      </div>
+      <a href="About.dc.html" style="color:#c3d0e0;text-decoration:none" style-hover="color:#fff">About</a>
+      <a href="Contact.dc.html" style="color:#fff;text-decoration:none;border-bottom:2px solid #c9a45c;padding-bottom:2px">Contact</a>
+      <a href="tel:8633246591" style="color:#fff;text-decoration:none;font:700 15px 'Public Sans',sans-serif;border-bottom:2px solid #b7791f;padding-bottom:2px">863-324-6591</a>
+    </nav>
+  </div>
+</header>
+
+<!-- page title -->
+<div style="background:#1e3a5f">
+  <div style="max-width:1140px;margin:0 auto;padding:56px 32px 52px;display:flex;flex-direction:column;gap:16px">
+    <div style="width:56px;height:3px;background:#c9a45c"></div>
+    <h1 style="margin:0;font:600 40px/1.2 'Lora',serif;color:#fff">Contact us</h1>
+    <p style="margin:0;font:400 16.5px/1.65 'Public Sans',sans-serif;color:#b8c7da;max-width:60ch">The fastest way to reach us is the phone — you'll talk to a person, not a menu. Or send a note below and we'll get back to you.</p>
+  </div>
+</div>
+
+<div style="max-width:1140px;margin:0 auto;padding:56px 32px 64px;width:100%;box-sizing:border-box;display:grid;grid-template-columns:5fr 7fr;gap:44px;align-items:start">
+
+  <!-- contact details -->
+  <div style="display:flex;flex-direction:column;gap:24px">
+    <div style="background:#fff;border:1px solid #dde4ec;border-radius:8px;padding:26px 28px;display:flex;flex-direction:column;gap:18px">
+      <div style="display:flex;flex-direction:column;gap:4px">
+        <span style="font:600 13px 'Public Sans',sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#b7791f">Phone</span>
+        <a href="tel:8633246591" style="font:700 26px 'Public Sans',sans-serif;color:#1e3a5f;text-decoration:none">863-324-6591</a>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:4px">
+        <span style="font:600 13px 'Public Sans',sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#b7791f">Office hours</span>
+        <span style="font:400 15px/1.6 'Public Sans',sans-serif;color:#4c5a6b">Monday–Friday, 9am–4pm</span>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:4px">
+        <span style="font:600 13px 'Public Sans',sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#b7791f">Address</span>
+        <span style="font:400 15px/1.6 'Public Sans',sans-serif;color:#4c5a6b">1771 Executive Rd<br>Winter Haven, FL 33884</span>
+      </div>
+    </div>
+    <div style="height:280px;border-radius:8px;overflow:hidden;border:1px solid #dde4ec">
+      <iframe src="https://www.google.com/maps?q=1771+Executive+Rd,+Winter+Haven,+FL+33884&output=embed" title="Map to Vineland Development" style="width:100%;height:100%;border:0"></iframe>
+    </div>
+  </div>
+
+  <!-- form -->
+  <div style="background:#fff;border:1px solid #dde4ec;border-radius:8px;padding:30px 32px 34px;display:flex;flex-direction:column;gap:18px">
+    <h2 style="margin:0;font:600 24px 'Lora',serif;color:#1e3a5f">Send us a note</h2>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+      <label style="display:flex;flex-direction:column;gap:6px;font:600 13.5px 'Public Sans',sans-serif;color:#33404f">Your name
+        <input type="text" placeholder="First and last" style="font:400 15px 'Public Sans',sans-serif;color:#33404f;padding:12px 14px;border:1px solid #c7cfd9;border-radius:4px;background:#fff" style-focus="border-color:#1e3a5f;outline:none"></input>
+      </label>
+      <label style="display:flex;flex-direction:column;gap:6px;font:600 13.5px 'Public Sans',sans-serif;color:#33404f">Phone or email
+        <input type="text" placeholder="Best way to reach you" style="font:400 15px 'Public Sans',sans-serif;color:#33404f;padding:12px 14px;border:1px solid #c7cfd9;border-radius:4px;background:#fff" style-focus="border-color:#1e3a5f;outline:none"></input>
+      </label>
+    </div>
+    <label style="display:flex;flex-direction:column;gap:6px;font:600 13.5px 'Public Sans',sans-serif;color:#33404f">What do you need?
+      <input type="text" placeholder="e.g. a 10×20 unit, covered boat parking, a balance question" style="font:400 15px 'Public Sans',sans-serif;color:#33404f;padding:12px 14px;border:1px solid #c7cfd9;border-radius:4px;background:#fff" style-focus="border-color:#1e3a5f;outline:none"></input>
+    </label>
+    <label style="display:flex;flex-direction:column;gap:6px;font:600 13.5px 'Public Sans',sans-serif;color:#33404f">Message
+      <textarea rows="5" placeholder="Tell us a little more…" style="font:400 15px/1.6 'Public Sans',sans-serif;color:#33404f;padding:12px 14px;border:1px solid #c7cfd9;border-radius:4px;background:#fff;resize:vertical" style-focus="border-color:#1e3a5f;outline:none"></textarea>
+    </label>
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap">
+      <button type="button" style="background:#b7791f;color:#fff;border:none;padding:14px 28px;border-radius:4px;font:600 16px 'Public Sans',sans-serif;cursor:pointer" style-hover="background:#a06a1a">Send message</button>
+      <span style="font:400 13.5px 'Public Sans',sans-serif;color:#8592a3">In a hurry? Just call — <a href="tel:8633246591" style="color:#1e3a5f;font-weight:600">863-324-6591</a></span>
+    </div>
+  </div>
+
+</div>
+
+<!-- footer -->
+<footer style="background:#16293f;margin-top:auto">
+  <div style="max-width:1140px;margin:0 auto;padding:44px 32px 40px;display:grid;grid-template-columns:2fr 1fr 1fr;gap:36px">
+    <div style="display:flex;flex-direction:column;gap:8px">
+      <span style="font:600 19px 'Lora',serif;color:#fff">Vineland Development</span>
+      <span style="font:400 13.5px/1.6 'Public Sans',sans-serif;color:#8fa3bd">Flex space, storage, and parking in Winter Haven, Florida. Family-run since 1972.</span>
+    </div>
+    <nav style="display:flex;flex-direction:column;gap:9px;font:500 14px 'Public Sans',sans-serif">
+      <a href="Spaces %26 Parking.dc.html" style="color:#c3d0e0;text-decoration:none" style-hover="color:#fff">Spaces &amp; Parking</a>
+      <a href="How to Pay.dc.html" style="color:#c3d0e0;text-decoration:none" style-hover="color:#fff">How to Pay</a>
+      <a href="About.dc.html" style="color:#c3d0e0;text-decoration:none" style-hover="color:#fff">About</a>
+      <a href="Contact.dc.html" style="color:#c3d0e0;text-decoration:none" style-hover="color:#fff">Contact</a>
+    </nav>
+    <div style="display:flex;flex-direction:column;gap:9px;font:400 14px/1.5 'Public Sans',sans-serif;color:#c3d0e0">
+      <a href="tel:8633246591" style="color:#fff;text-decoration:none;font-weight:700">863-324-6591</a>
+      <span>1771 Executive Rd<br>Winter Haven, FL 33884</span>
+      <span>Mon–Fri 9am–4pm</span>
+    </div>
+  </div>
+</footer>
+</div>
+</x-dc>
+</body>
+</html>

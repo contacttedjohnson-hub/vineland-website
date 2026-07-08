@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;1,500&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>body{margin:0;background:#f5f7f9;font-family:'Public Sans',sans-serif}a{color:#1e3a5f}a:hover{color:#b7791f}.nav-drop{display:none}.nav-pay:hover .nav-drop{display:flex}</style>
+</helmet>
+
+<div data-screen-label="How to Pay" style="min-height:100vh;background:#f5f7f9;color:#33404f;display:flex;flex-direction:column">
+
+<!-- header -->
+<header style="background:#16293f">
+  <div style="max-width:1140px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:20px 32px;flex-wrap:wrap">
+    <a href="Home.dc.html" style="display:flex;align-items:baseline;gap:12px;text-decoration:none">
+      <span style="font:600 21px 'Lora',serif;color:#fff">Vineland Development</span>
+      <span style="font:400 11.5px 'Public Sans',sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#c9a45c">Est. 1972</span>
+    </a>
+    <nav style="display:flex;align-items:center;gap:26px;font:500 14px 'Public Sans',sans-serif;flex-wrap:wrap">
+      <a href="Spaces %26 Parking.dc.html" style="color:#c3d0e0;text-decoration:none" style-hover="color:#fff">Spaces &amp; Parking</a>
+      <div class="nav-pay" style="position:relative;display:flex">
+        <a href="How to Pay.dc.html" style="color:#fff;text-decoration:none;border-bottom:2px solid #c9a45c;padding-bottom:2px;display:flex;align-items:center;gap:6px">How to Pay <span style="font-size:9px;color:#c9a45c">▼</span></a>
+        <div class="nav-drop" style="position:absolute;top:100%;left:50%;transform:translateX(-50%);padding-top:14px;flex-direction:column;z-index:50">
+          <div style="background:#16293f;border:1px solid #2c4a70;border-top:2px solid #c9a45c;border-radius:0 0 6px 6px;box-shadow:0 12px 28px rgba(10,20,34,.4);min-width:250px;display:flex;flex-direction:column;padding:8px 0">
+            <a href="#bill-pay" style="padding:11px 18px;color:#c3d0e0;text-decoration:none;font:500 14px 'Public Sans',sans-serif" style-hover="background:#1e3a5f;color:#fff">Bank bill pay</a>
+            <a href="#card" style="padding:11px 18px;color:#c3d0e0;text-decoration:none;font:500 14px 'Public Sans',sans-serif" style-hover="background:#1e3a5f;color:#fff">Pay online by card</a>
+            <a href="#office" style="padding:11px 18px;color:#c3d0e0;text-decoration:none;font:500 14px 'Public Sans',sans-serif" style-hover="background:#1e3a5f;color:#fff">At the office or by mail</a>
+          </div>
+        </div>
+      </div>
+      <a href="About.dc.html" style="color:#c3d0e0;text-decoration:none" style-hover="color:#fff">About</a>
+      <a href="Contact.dc.html" style="color:#c3d0e0;text-decoration:none" style-hover="color:#fff">Contact</a>
+      <a href="tel:8633246591" style="color:#fff;text-decoration:none;font:700 15px 'Public Sans',sans-serif;border-bottom:2px solid #b7791f;padding-bottom:2px">863-324-6591</a>
+    </nav>
+  </div>
+</header>
+
+<!-- page title -->
+<div style="background:#1e3a5f">
+  <div style="max-width:1140px;margin:0 auto;padding:56px 32px 52px;display:flex;flex-direction:column;gap:16px">
+    <div style="width:56px;height:3px;background:#c9a45c"></div>
+    <h1 style="margin:0;font:600 40px/1.2 'Lora',serif;color:#fff">How to Pay</h1>
+    <p style="margin:0;font:400 16.5px/1.65 'Public Sans',sans-serif;color:#b8c7da;max-width:62ch">Three ways to pay rent — and with us, the price is the price. No taxes, no added fees, no teaser rates that jump after a month. The one exception: card payments carry the card company's processing fee, which is why most folks pay by check, cash, or bank bill pay.</p>
+  </div>
+</div>
+
+<div style="max-width:880px;margin:0 auto;padding:56px 32px 0;width:100%;box-sizing:border-box;display:flex;flex-direction:column;gap:36px">
+
+  <!-- ===== bank bill pay ===== -->
+  <div id="bill-pay" style="scroll-margin-top:24px;background:#fff;border:1px solid #dde4ec;border-radius:8px;overflow:hidden;box-shadow:0 4px 16px rgba(22,41,63,.07)">
+    <div style="background:#1e3a5f;padding:22px 32px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap">
+      <h2 style="margin:0;font:600 24px 'Lora',serif;color:#fff">Pay by bank bill pay</h2>
+      <span style="font:700 12px 'Public Sans',sans-serif;letter-spacing:.1em;text-transform:uppercase;background:#c9a45c;color:#16293f;padding:6px 12px;border-radius:3px">Recommended</span>
+    </div>
+    <div style="padding:28px 32px 32px;display:flex;flex-direction:column;gap:18px">
+      <p style="margin:0;font:400 15.5px/1.7 'Public Sans',sans-serif;color:#4c5a6b">Nearly every bank — Wells Fargo, Chase, Bank of America, local credit unions — has a free feature on its website and app, usually called <strong>Bill Pay</strong>. You add us as a payee once, and your bank mails us a check each month. It costs you nothing, there are no processing fees, and it arrives like any other check.</p>
+      <p style="margin:0;font:400 15.5px/1.7 'Public Sans',sans-serif;color:#4c5a6b">Best of all: set it to <strong>repeat automatically</strong> and rent handles itself. No stamps, no logins, no remembering.</p>
+      <div style="border:1px solid #dde4ec;border-radius:6px;overflow:hidden;margin-top:4px">
+        <div style="background:#f5f7f9;padding:14px 24px;font:600 13px 'Public Sans',sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#b7791f">Set it up in five steps</div>
+        <ol style="margin:0;padding:20px 24px 24px 48px;display:flex;flex-direction:column;gap:14px;font:400 15px/1.6 'Public Sans',sans-serif;color:#33404f">
+          <li>Log into your bank's website or app and find <strong>Bill Pay</strong> (sometimes "Pay bills").</li>
+          <li>Add a new payee: <strong style="color:#1e3a5f">Vineland Development Corp</strong></li>
+          <li>Mailing address: <strong style="color:#1e3a5f">1771 Executive Rd, Winter Haven, FL 33884</strong></li>
+          <li>In the memo or account field, put <strong style="color:#1e3a5f">your name and unit number</strong> so we credit the right account.</li>
+          <li>Schedule the payment about <strong>a week before the 1st</strong>, and set it to <strong>repeat monthly</strong>. Done — for good.</li>
+        </ol>
+      </div>
+      <p style="margin:0;font:italic 400 14px 'Lora',serif;color:#8b7c5e">Not sure how to find Bill Pay at your bank? Call us — we've walked plenty of folks through it.</p>
+    </div>
+  </div>
+
+  <!-- ===== card ===== -->
+  <div id="card" style="scroll-margin-top:24px;background:#fff;border:1px solid #dde4ec;border-radius:8px;padding:28px 32px 32px;display:flex;flex-direction:column;gap:16px">
+    <h2 style="margin:0;font:600 24px 'Lora',serif;color:#1e3a5f">Pay online by card</h2>
+    <p style="margin:0;font:400 15.5px/1.7 'Public Sans',sans-serif;color:#4c5a6b">Prefer a card? You can pay online in about a minute — no account or login needed. At checkout you'll enter your <strong>name and unit number</strong> so we credit the right account, and your receipt comes by email.</p>
+    <div style="background:#faf6ec;border:1px solid #e3d7b3;border-radius:6px;padding:16px 20px;display:flex;gap:12px;align-items:baseline">
+      <span style="flex:none;font:700 13px 'Public Sans',sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#8a6d1f">Please note</span>
+      <span style="font:500 15px/1.6 'Public Sans',sans-serif;color:#5a4d28">Card payments include a <strong>[X]% processing fee</strong> — that's the card company's charge, not ours. Every other way to pay is fee-free.</span>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:8px;align-items:flex-start">
+      <a href="#" style="background:#c7cfd9;color:#5a6b80;text-decoration:none;padding:15px 28px;border-radius:4px;font:600 16px 'Public Sans',sans-serif;cursor:default">Online card payments coming soon — call the office to pay by card</a>
+      <span style="font:400 13px 'Public Sans',sans-serif;color:#8592a3">This button will take you to our secure payment page.</span>
+    </div>
+  </div>
+
+  <!-- ===== office / mail ===== -->
+  <div id="office" style="scroll-margin-top:24px;background:#fff;border:1px solid #dde4ec;border-radius:8px;padding:28px 32px 32px;display:flex;flex-direction:column;gap:16px">
+    <h2 style="margin:0;font:600 24px 'Lora',serif;color:#1e3a5f">Pay at the office or by mail</h2>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px">
+      <div style="display:flex;flex-direction:column;gap:6px">
+        <span style="font:600 15px 'Public Sans',sans-serif;color:#1e3a5f">At the office</span>
+        <p style="margin:0;font:400 14.5px/1.65 'Public Sans',sans-serif;color:#4c5a6b">Cash or check, Monday–Friday, 9am–4pm.<br>1771 Executive Rd, Winter Haven, FL 33884.</p>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:6px">
+        <span style="font:600 15px 'Public Sans',sans-serif;color:#1e3a5f">By mail</span>
+        <p style="margin:0;font:400 14.5px/1.65 'Public Sans',sans-serif;color:#4c5a6b">Checks payable to <strong>Vineland Development Corp</strong>, mailed to the same address. Put your name and unit number on the memo line.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== questions closer ===== -->
+  <div style="background:#1e3a5f;border-radius:8px;padding:34px 38px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-bottom:64px">
+    <div style="max-width:56ch">
+      <h2 style="margin:0 0 8px;font:600 24px 'Lora',serif;color:#fff">Questions or problems?</h2>
+      <p style="margin:0;font:400 15px/1.65 'Public Sans',sans-serif;color:#b8c7da">Anything else — a balance question, a payment that didn't go through, special circumstances — just call the office. You'll talk to a person.</p>
+    </div>
+    <a href="tel:8633246591" style="flex:none;background:#b7791f;color:#fff;text-decoration:none;padding:16px 30px;border-radius:4px;font:700 18px 'Public Sans',sans-serif" style-hover="background:#a06a1a;color:#fff">863-324-6591</a>
+  </div>
+
+</div>
+
+<!-- footer -->
+<footer style="background:#16293f;margin-top:auto">
+  <div style="max-width:1140px;margin:0 auto;padding:44px 32px 40px;display:grid;grid-template-columns:2fr 1fr 1fr;gap:36px">
+    <div style="display:flex;flex-direction:column;gap:8px">
+      <span style="font:600 19px 'Lora',serif;color:#fff">Vineland Development</span>
+      <span style="font:400 13.5px/1.6 'Public Sans',sans-serif;color:#8fa3bd">Flex space, storage, and parking in Winter Haven, Florida. Family-run since 1972.</span>
+    </div>
+    <nav style="display:flex;flex-direction:column;gap:9px;font:500 14px 'Public Sans',sans-serif">
+      <a href="Spaces %26 Parking.dc.html" style="color:#c3d0e0;text-decoration:none" style-hover="color:#fff">Spaces &amp; Parking</a>
+      <a href="How to Pay.dc.html" style="color:#c3d0e0;text-decoration:none" style-hover="color:#fff">How to Pay</a>
+      <a href="About.dc.html" style="color:#c3d0e0;text-decoration:none" style-hover="color:#fff">About</a>
+      <a href="Contact.dc.html" style="color:#c3d0e0;text-decoration:none" style-hover="color:#fff">Contact</a>
+    </nav>
+    <div style="display:flex;flex-direction:column;gap:9px;font:400 14px/1.5 'Public Sans',sans-serif;color:#c3d0e0">
+      <a href="tel:8633246591" style="color:#fff;text-decoration:none;font-weight:700">863-324-6591</a>
+      <span>1771 Executive Rd<br>Winter Haven, FL 33884</span>
+      <span>Mon–Fri 9am–4pm</span>
+    </div>
+  </div>
+</footer>
+</div>
+</x-dc>
+</body>
+</html>

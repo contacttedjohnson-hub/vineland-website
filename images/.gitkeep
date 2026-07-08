@@ -1,0 +1,14 @@
+# Drop facility photos here. Expected filenames (referenced in the page comments):
+#   home-hero.jpg          — homepage hero (right side)
+#   home-band-1.jpg        — homepage photo band: unit doors
+#   home-band-2.jpg        — homepage photo band: tenant workshop
+#   home-band-3.jpg        — homepage photo band: boat & RV parking
+#   spaces-units.jpg       — Spaces page: drive-up unit row
+#   spaces-workshop.jpg    — Spaces page: workshop interior
+#   spaces-parking.jpg     — Spaces page: boat / RV parking
+#   about-facility.jpg     — About page: the facility
+#   about-family.jpg       — About page: the family / office
+#
+# To use one: open the page, find the matching <!-- Photo slot: ... --> comment,
+# and replace the <div class="img-slot">...</div> with:
+#   <img src="images/home-hero.jpg" alt="Short description of the photo">
