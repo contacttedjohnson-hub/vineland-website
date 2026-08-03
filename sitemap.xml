@@ -24,4 +24,8 @@
     <loc>https://vinelanddevelopment.com/privacy.html</loc>
     <priority>0.3</priority>
   </url>
+  <url>
+    <loc>https://vinelanddevelopment.com/sms-terms.html</loc>
+    <priority>0.3</priority>
+  </url>
 </urlset>
