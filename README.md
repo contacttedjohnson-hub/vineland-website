@@ -56,6 +56,20 @@ The `r-45`, `r-43`, `r-32`, `r-11` classes set the shape of the box (4:5,
 Keep photos reasonably sized (roughly 1600px wide is plenty) so pages stay
 fast on phones.
 
+## Two designs to compare (temporary)
+
+While the owner picks a look, the repo carries two designs that share the
+same words:
+
+- **Option A** is the main pages in the repo root, styled by `css/style.css`.
+- **Option B** is the `option-b/` folder, styled by `css/style-b.css`. Open
+  `option-b/index.html` to see it.
+
+The pages in `option-b/` are generated copies. Do not edit them by hand.
+Edit the main pages, then run `python build-option-b.py` to refresh the
+folder. Once a design is chosen, delete `option-b/`, `build-option-b.py`,
+and the losing stylesheet.
+
 ## Still to be filled in later
 
 Two things are intentionally left as placeholders and get pasted in once
