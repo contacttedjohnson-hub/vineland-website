@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>[Theme C: Sunlit] Vineland Development | Garages, Storage &amp; Parking in Winter Haven, FL</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+/* Theme C, "Sunlit". Warm cream, terracotta, rounded corners, pill buttons.
+   Inspiration: a well-run boutique hotel or a modern coffee roaster.
+   Friendly first, then efficient. Front page only. */
+:root{--cream:#fbf7f0;--cream2:#f2eadb;--cream3:#e8ddc9;--ink:#221f1b;--ink2:#4a443d;--muted:#7a736a;--terra:#c4633a;--terra2:#a9522d;--brown:#3b2f28;--r:16px;--max:1200px;--g:clamp(20px,5vw,64px);
+  --sans:'Manrope',system-ui,sans-serif;--serif:'Instrument Serif',Georgia,serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink2);font:400 17px/1.6 var(--sans)}
+h1,h2,h3{margin:0;color:var(--ink);font-family:var(--sans);font-weight:700;letter-spacing:-.025em;line-height:1.05;text-wrap:balance}
+p{margin:0}a{color:inherit}img{display:block;max-width:100%}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--g);width:100%}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font:700 12px/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--terra)}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:16px 26px;border-radius:999px;text-decoration:none;font:700 15px/1 var(--sans);transition:.15s;white-space:nowrap;border:1.5px solid transparent}
+.btn-t{background:var(--terra);color:#fff}.btn-t:hover{background:var(--terra2)}
+.btn-o{background:transparent;color:var(--ink);border-color:var(--cream3)}.btn-o:hover{border-color:var(--ink)}
+.btn-w{background:#fff;color:var(--ink)}.btn-w:hover{background:var(--cream2)}
+.link{display:inline-flex;gap:8px;align-items:center;text-decoration:none;font:700 15px/1 var(--sans);color:var(--terra)}
+.link::after{content:'\2192'}.link:hover{color:var(--ink)}
+
+/* header */
+.hdr{position:sticky;top:0;z-index:50;background:rgba(251,247,240,.9);backdrop-filter:blur(10px)}
+.hdr-in{max-width:var(--max);margin:0 auto;padding:16px var(--g);display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{text-decoration:none;color:var(--ink);display:flex;flex-direction:column;gap:2px}
+.brand b{font:800 19px/1 var(--sans);letter-spacing:-.02em}.brand span{font:600 11px/1 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.nav{display:flex;align-items:center;gap:26px}.nav a{text-decoration:none;font:600 14px/1 var(--sans);color:var(--ink2)}.nav a:hover{color:var(--ink)}
+.nav .tel{background:var(--ink);color:#fff;padding:12px 18px;border-radius:999px}.nav .tel:hover{background:var(--terra);color:#fff}
+.tog{display:none;background:none;border:0;padding:8px;color:var(--ink)}
+
+/* hero */
+.hero{padding:clamp(40px,6vw,80px) 0 clamp(32px,4vw,56px)}
+.hero-g{display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(28px,5vw,64px);align-items:center}
+.hero h1{font-size:clamp(42px,5.6vw,74px)}
+.hero h1 em{font-family:var(--serif);font-style:italic;font-weight:400;color:var(--terra);font-size:1.08em}
+.lede{margin-top:22px;font-size:18px;max-width:50ch}
+.acts{display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin-top:28px}
+.note{margin-top:16px;font-size:14px;color:var(--muted)}
+.model{background:var(--cream2);border-radius:calc(var(--r) + 8px);padding:clamp(16px,2.5vw,32px);position:relative;overflow:hidden}
+.model img{width:100%;height:auto}
+.model .tag{position:absolute;left:18px;top:18px;background:#fff;border-radius:999px;padding:8px 12px;font:700 11px/1 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--ink2)}
+
+/* stats */
+.stats{margin-top:clamp(32px,4vw,56px)}
+.stats-g{display:grid;grid-template-columns:repeat(4,1fr);background:#fff;border-radius:var(--r);overflow:hidden}
+.st{padding:26px 28px;border-left:1px solid var(--cream2)}.st:first-child{border-left:0}
+.st b{display:block;font:800 40px/1 var(--sans);letter-spacing:-.03em;color:var(--ink)}.st span{display:block;margin-top:8px;font-size:14px;color:var(--muted)}
+
+/* offers */
+.sec{padding:clamp(56px,7vw,96px) 0}
+.sec-h{max-width:32ch;margin-bottom:36px}.sec-h h2{font-size:clamp(30px,3.6vw,46px);margin-top:14px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:#fff;border-radius:var(--r);padding:30px 28px 28px;text-decoration:none;color:inherit;display:flex;flex-direction:column;gap:12px;transition:.15s;border:1.5px solid transparent}
+.card:hover{border-color:var(--cream3);transform:translateY(-2px)}
+.card .n{font:800 12px/1 var(--sans);letter-spacing:.1em;color:var(--terra)}
+.card h3{font-size:24px}.card p{font-size:15.5px;color:var(--ink2)}.card .link{margin-top:auto;padding-top:8px}
+
+/* statement */
+.state{background:var(--brown);color:#e9ddd0;border-radius:calc(var(--r) + 8px);padding:clamp(40px,5vw,72px);display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,5vw,72px);align-items:start}
+.state h2{color:#fff;font-size:clamp(34px,4.2vw,56px)}
+.state h2 em{font-family:var(--serif);font-style:italic;font-weight:400;color:#e8b08a;font-size:1.08em}
+.state .lede{color:#d9ccbf;font-size:17px;max-width:44ch}
+.pl{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.pl div{background:rgba(255,255,255,.06);border-radius:14px;padding:20px}
+.pl b{display:block;color:#fff;font:700 17px/1.2 var(--sans);margin-bottom:8px}.pl span{font-size:14.5px;color:#cbbdaf;line-height:1.5}
+
+/* photos */
+.ph-g{display:grid;grid-template-columns:2fr 1fr 1fr;gap:14px}
+.ph{background:var(--cream2);border-radius:var(--r);aspect-ratio:1;display:flex;align-items:flex-end;padding:16px;font:700 11px/1 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.ph:first-child{aspect-ratio:auto}
+
+/* closing */
+.close{display:grid;grid-template-columns:1fr auto;gap:40px;align-items:center;padding:clamp(40px,5vw,64px) 0;border-top:1px solid var(--cream3)}
+.close h2{font-size:clamp(32px,4vw,52px)}.close p{margin-top:14px;max-width:48ch}
+.close .big{font:800 clamp(30px,3.4vw,44px)/1 var(--sans);letter-spacing:-.03em;color:var(--ink);text-decoration:none}
+.close .big:hover{color:var(--terra)}.close small{display:block;margin-top:10px;font-size:13.5px;color:var(--muted);max-width:36ch}
+
+/* footer */
+.ftr{background:var(--brown);color:#cbbdaf;margin-top:40px}
+.ftr-in{max-width:var(--max);margin:0 auto;padding:56px var(--g) 32px;display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px}
+.ftr b{display:block;color:#fff;font:800 20px/1.1 var(--sans);margin-bottom:12px}.ftr a,.ftr span{display:block;color:#d9ccbf;text-decoration:none;font-size:15px;line-height:1.6}.ftr a:hover{color:#fff}
+.ftr .h{font:700 11px/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:#e8b08a;margin-bottom:12px}
+.ftr-b{border-top:1px solid rgba(255,255,255,.1)}.ftr-b div{max-width:var(--max);margin:0 auto;padding:18px var(--g);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:13px;color:#a2948a}
+.ftr-b a{color:#cbbdaf;text-decoration:none;margin-left:18px}
+
+@media (max-width:920px){
+  .tog{display:block}.nav{display:none;position:absolute;left:0;right:0;top:100%;background:var(--cream);flex-direction:column;align-items:stretch;gap:0;padding:8px var(--g) 20px;border-bottom:1px solid var(--cream3)}
+  .nav.open{display:flex}.nav a{padding:14px 0;border-bottom:1px solid var(--cream2)}.nav .tel{margin-top:14px;text-align:center}
+  .hero-g,.state,.close{grid-template-columns:1fr}.hero-g .model{order:-1}
+  .stats-g{grid-template-columns:1fr 1fr}.st:nth-child(odd){border-left:0}.st:nth-child(-n+2){border-bottom:1px solid var(--cream2)}
+  .cards{grid-template-columns:1fr}.ph-g{grid-template-columns:1fr 1fr}.ph:first-child{grid-column:1/-1;aspect-ratio:16/9}
+  .ftr-in{grid-template-columns:1fr}
+}
+@media (max-width:560px){.pl{grid-template-columns:1fr}.ph-g{grid-template-columns:1fr}.btn{width:100%}}
+</style>
+</head>
+<body>
+<header class="hdr"><div class="hdr-in">
+  <a class="brand" href="../index.html"><b>Vineland Development</b><span>Winter Haven, Florida &middot; Since 1972</span></a>
+  <button class="tog nav-toggle" type="button" aria-label="Menu" aria-controls="site-nav" aria-expanded="false"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="8" x2="21" y2="8"/><line x1="3" y1="16" x2="21" y2="16"/></svg></button>
+  <nav class="nav" id="site-nav">
+    <a href="../spaces-parking.html">Spaces &amp; Parking</a><a href="../how-to-pay.html">How to Pay</a><a href="../about.html">About</a><a href="../contact.html">Contact</a>
+    <a class="tel" href="tel:8633246591">863-324-6591</a>
+  </nav>
+</div></header>
+
+<main>
+<section class="hero"><div class="wrap hero-g">
+  <div>
+    <span class="eyebrow">Garages, storage &amp; parking</span>
+    <h1 style="margin-top:18px">Room to work. Room to keep things. <em>Since 1972.</em></h1>
+    <p class="lede">134 drive-up garages and 75 parking spaces on Executive Road in Winter Haven, rented month to month by the same family since 1972. Most units have their own electric meter. Small businesses, tradespeople, weekend mechanics, and neighbors who ran out of room at home.</p>
+    <div class="acts"><a class="btn btn-t" href="tel:8633246591">Call 863-324-6591</a><a class="btn btn-o" href="../spaces-parking.html">See the spaces</a></div>
+    <p class="note">Office hours Monday to Friday, 9 to 4. Any other time, leave a message and we'll call you back.</p>
+  </div>
+  <div class="model"><span class="tag">Drive up. Roll up. Done.</span><img src="model.svg" alt="Line drawing of a row of drive-up units. A pickup backs up, a roll-up door opens, then closes again."></div>
+</div></section>
+
+<section class="stats"><div class="wrap"><div class="stats-g">
+  <div class="st"><b>134</b><span>drive-up units</span></div><div class="st"><b>7</b><span>buildings</span></div>
+  <div class="st"><b>75</b><span>parking spaces</span></div><div class="st"><b>1972</b><span>same family since</span></div>
+</div></div></section>
+
+<section class="sec"><div class="wrap">
+  <div class="sec-h"><span class="eyebrow">What we rent</span><h2>Three kinds of space. One phone number.</h2></div>
+  <div class="cards">
+    <a class="card" href="../spaces-parking.html"><span class="n">01</span><h3>Work garages</h3><p>Enclosed drive-up bays, most with their own electric meter. Room to work on a project or keep the tools close. Sizes from 10&times;10 up to 46&times;25.</p><span class="link">The garages</span></a>
+    <a class="card" href="../spaces-parking.html"><span class="n">02</span><h3>Storage</h3><p>Dry, ground-level space for inventory, equipment, and the things that don't fit at home. Back your truck up to the door.</p><span class="link">Storage units</span></a>
+    <a class="card" href="../spaces-parking.html#parking"><span class="n">03</span><h3>Parking</h3><p>Open and covered spots for boats, trailers, RVs, and work vehicles. Spaces from 12&times;20 up to 12&times;40.</p><span class="link">Parking</span></a>
+  </div>
+</div></section>
+
+<section><div class="wrap"><div class="state">
+  <div><span class="eyebrow" style="color:#e8b08a">How we do business</span><h2 style="margin-top:16px">The price is <em>the price.</em></h2><p class="lede">Month to month. No move-in special that doubles in ninety days. No admin fee. No call center. When you call, you're calling the office.</p></div>
+  <div class="pl">
+    <div><b>Month to month</b><span>Stay a season or stay twenty years. Most of our tenants do the second.</span></div>
+    <div><b>Drive-up access</b><span>Every unit is at ground level with its own door. No hallways, no elevators, no carts.</span></div>
+    <div><b>Your own meter</b><span>Most units are metered. Power goes in your name through TECO, so you pay for what you use and nothing else.</span></div>
+    <div><b>Family-run</b><span>Same family, same office, same phone number for over fifty years.</span></div>
+  </div>
+</div></div></section>
+
+<section class="sec"><div class="wrap ph-g">
+  <div class="ph">Unit doors</div><div class="ph">A tenant's garage</div><div class="ph">Boat &amp; RV parking</div>
+</div></section>
+
+<section><div class="wrap close">
+  <div><h2>Call and ask what's open.</h2><p>We stay close to full, and what's available changes week to week. If nothing fits today, we'll put you on the waiting list and call you when something does.</p></div>
+  <div><a class="big" href="tel:8633246591">863-324-6591</a><small>Office at 1771 Executive Rd, Winter Haven, FL 33884. The buildings are right behind it.</small></div>
+</div></section>
+</main>
+
+<footer class="ftr"><div class="ftr-in">
+  <div><b>Vineland Development</b><span>Drive-up garages, storage, and parking on Executive Road in Winter Haven, Florida. Family-run since 1972.</span></div>
+  <div><div class="h">Pages</div><a href="../spaces-parking.html">Spaces &amp; Parking</a><a href="../how-to-pay.html">How to Pay</a><a href="../about.html">About</a><a href="../contact.html">Contact</a></div>
+  <div><div class="h">Office</div><a href="tel:8633246591" style="color:#fff;font-weight:800;font-size:22px">863-324-6591</a><span>1771 Executive Rd<br>Winter Haven, FL 33884</span><span>Office hours Monday to Friday, 9am to 4pm</span></div>
+</div><div class="ftr-b"><div><span>&copy; Vineland Development Corp.</span><span><a href="../privacy.html">Privacy Policy</a><a href="../sms-terms.html">SMS Terms</a></span></div></div></footer>
+<script src="../js/nav.js"></script>
+</body>
+</html>

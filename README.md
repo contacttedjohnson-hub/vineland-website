@@ -65,6 +65,11 @@ same words:
 - **Option B** is the `option-b/` folder, styled by `css/style-b.css`. Open
   `option-b/index.html` to see it.
 
+There are also three front-page-only sketches in `themes/` (`c.html`,
+`d.html`, `e.html`), each self-contained with its own styles, plus the small
+animated line drawing `themes/model.svg` they share. They exist only to
+compare looks. Delete `themes/` once a direction is chosen.
+
 The pages in `option-b/` are generated copies. Do not edit them by hand.
 Edit the main pages, then run `python build-option-b.py` to refresh the
 folder. Once a design is chosen, delete `option-b/`, `build-option-b.py`,

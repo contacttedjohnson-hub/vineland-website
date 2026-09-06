@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 520" width="1000" height="520" role="img" aria-label="Line drawing of a row of drive-up units. A pickup backs up, a roll-up door opens, then closes again.">
+  <title>Drive-up units with a truck pulling up</title>
+  <style>
+    .ln{fill:none;stroke:#3a3630;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+    .thin{fill:none;stroke:#3a3630;stroke-width:1.5;stroke-linecap:round}
+    .fill{fill:#f1e9da}
+    .accent{fill:#c08a4b}
+    .inside{fill:#d8cdb8}
+    .sky{fill:none;stroke:#c9c1b3;stroke-width:1.5;stroke-linecap:round}
+    .truck{animation:drive 16s cubic-bezier(.4,0,.2,1) infinite}
+    .wheel{transform-box:fill-box;transform-origin:center;animation:roll 16s linear infinite}
+    .door{animation:door 16s ease-in-out infinite}
+    .cloud1{animation:drift 22s ease-in-out infinite alternate}
+    .cloud2{animation:drift 30s ease-in-out infinite alternate-reverse}
+    @keyframes drive{0%{transform:translateX(760px)}18%{transform:translateX(0)}80%{transform:translateX(0)}96%,100%{transform:translateX(-1150px)}}
+    @keyframes roll{0%{transform:rotate(0)}18%{transform:rotate(-900deg)}80%{transform:rotate(-900deg)}96%,100%{transform:rotate(-2400deg)}}
+    @keyframes door{0%,22%{transform:translateY(0)}32%,72%{transform:translateY(-206px)}82%,100%{transform:translateY(0)}}
+    @keyframes drift{from{transform:translateX(-30px)}to{transform:translateX(30px)}}
+    @media (prefers-reduced-motion:reduce){.truck,.wheel,.door,.cloud1,.cloud2{animation:none}}
+  </style>
+
+  <!-- sky -->
+  <circle cx="870" cy="92" r="30" class="thin"/>
+  <g class="cloud1"><path class="sky" d="M120 110h70a16 16 0 0 0 0-32 24 24 0 0 0-44-10 20 20 0 0 0-26 42z"/></g>
+  <g class="cloud2"><path class="sky" d="M640 78h58a13 13 0 0 0 0-26 20 20 0 0 0-37-8 16 16 0 0 0-21 34z"/></g>
+
+  <!-- ground -->
+  <line x1="20" y1="432" x2="980" y2="432" class="ln"/>
+  <line x1="60" y1="470" x2="300" y2="470" class="thin"/>
+  <line x1="700" y1="470" x2="940" y2="470" class="thin"/>
+
+  <!-- building shell -->
+  <rect x="70" y="180" width="860" height="252" class="fill"/>
+  <path class="ln" d="M70 432V180h860v252"/>
+  <path class="ln" d="M52 180h896"/>
+  <path class="thin" d="M70 196h860"/>
+  <!-- small sign -->
+  <rect x="470" y="150" width="60" height="18" rx="2" class="accent"/>
+
+  <!-- five door bays: openings -->
+  <defs>
+    <clipPath id="c1"><rect x="96" y="222" width="140" height="210"/></clipPath>
+    <clipPath id="c2"><rect x="266" y="222" width="140" height="210"/></clipPath>
+    <clipPath id="c3"><rect x="430" y="222" width="140" height="210"/></clipPath>
+    <clipPath id="c4"><rect x="594" y="222" width="140" height="210"/></clipPath>
+    <clipPath id="c5"><rect x="764" y="222" width="140" height="210"/></clipPath>
+    <g id="slats">
+      <rect x="0" y="0" width="140" height="210" fill="#e7dfcf"/>
+      <g class="thin">
+        <line x1="0" y1="18" x2="140" y2="18"/><line x1="0" y1="36" x2="140" y2="36"/><line x1="0" y1="54" x2="140" y2="54"/>
+        <line x1="0" y1="72" x2="140" y2="72"/><line x1="0" y1="90" x2="140" y2="90"/><line x1="0" y1="108" x2="140" y2="108"/>
+        <line x1="0" y1="126" x2="140" y2="126"/><line x1="0" y1="144" x2="140" y2="144"/><line x1="0" y1="162" x2="140" y2="162"/>
+        <line x1="0" y1="180" x2="140" y2="180"/><line x1="0" y1="198" x2="140" y2="198"/>
+      </g>
+      <rect x="55" y="184" width="30" height="8" rx="2" fill="#3a3630"/>
+    </g>
+  </defs>
+
+  <!-- static doors -->
+  <g clip-path="url(#c1)"><use href="#slats" x="96" y="222"/></g>
+  <g clip-path="url(#c2)"><use href="#slats" x="266" y="222"/></g>
+  <g clip-path="url(#c4)"><use href="#slats" x="594" y="222"/></g>
+  <g clip-path="url(#c5)"><use href="#slats" x="764" y="222"/></g>
+
+  <!-- the door that opens: interior first, then the sliding slats -->
+  <rect x="430" y="222" width="140" height="210" class="inside"/>
+  <g class="thin">
+    <line x1="446" y1="372" x2="554" y2="372"/><line x1="452" y1="372" x2="452" y2="420"/><line x1="548" y1="372" x2="548" y2="420"/>
+    <rect x="462" y="300" width="60" height="40" rx="2" fill="none"/>
+  </g>
+  <g clip-path="url(#c3)"><g class="door"><use href="#slats" x="430" y="222"/></g></g>
+
+  <!-- door frames -->
+  <g class="ln">
+    <rect x="96" y="222" width="140" height="210"/><rect x="266" y="222" width="140" height="210"/>
+    <rect x="430" y="222" width="140" height="210"/><rect x="594" y="222" width="140" height="210"/>
+    <rect x="764" y="222" width="140" height="210"/>
+  </g>
+  <!-- meters between bays -->
+  <g class="thin">
+    <rect x="243" y="250" width="14" height="20" rx="2"/><rect x="411" y="250" width="14" height="20" rx="2"/>
+    <rect x="575" y="250" width="14" height="20" rx="2"/><rect x="742" y="250" width="14" height="20" rx="2"/>
+  </g>
+
+  <!-- pickup truck, drawn at its parked position, tail toward the open door -->
+  <g class="truck">
+    <g transform="translate(300 0)">
+      <path class="ln fill" d="M240 432H60l-6-20v-40l60-6 26-38h74l30 44h38v60h-42"/>
+      <path class="ln" d="M140 328h60l22 38H134zM214 366h64M54 372h60"/>
+      <line x1="120" y1="412" x2="230" y2="412" class="thin"/>
+      <g class="wheel"><circle cx="102" cy="432" r="22" class="ln fill"/><circle cx="102" cy="432" r="7" class="thin"/><line x1="102" y1="412" x2="102" y2="452" class="thin"/><line x1="82" y1="432" x2="122" y2="432" class="thin"/></g>
+      <g class="wheel"><circle cx="244" cy="432" r="22" class="ln fill"/><circle cx="244" cy="432" r="7" class="thin"/><line x1="244" y1="412" x2="244" y2="452" class="thin"/><line x1="224" y1="432" x2="264" y2="432" class="thin"/></g>
+    </g>
+  </g>
+</svg>
