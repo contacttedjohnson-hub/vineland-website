@@ -56,6 +56,15 @@ The `r-45`, `r-43`, `r-32`, `r-11` classes set the shape of the box (4:5,
 Keep photos reasonably sized (roughly 1600px wide is plenty) so pages stay
 fast on phones.
 
+## Showing the site on a phone before it is live
+
+Double-click `preview.cmd` in this folder and leave the black window open.
+Then on this PC open `http://localhost:8765/`, or on a phone that is on the
+Tailscale network open `http://backofficetower:8765/`. Add `/option-b/` or
+`/themes/c.html` to the address to see the other designs. Close the black
+window when done. If Windows asks about the firewall the first time, click
+Allow, otherwise the phone will not be able to reach it.
+
 ## Two designs to compare (temporary)
 
 While the owner picks a look, the repo carries two designs that share the

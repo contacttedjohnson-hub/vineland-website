@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>[Theme C: Sunlit] Vineland Development | Garages, Storage &amp; Parking in Winter Haven, FL</title>
 <meta name="robots" content="noindex">
+<meta name="theme-color" content="#fbf7f0">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
@@ -94,12 +95,16 @@ p{margin:0}a{color:inherit}img{display:block;max-width:100%}
 @media (max-width:920px){
   .tog{display:block}.nav{display:none;position:absolute;left:0;right:0;top:100%;background:var(--cream);flex-direction:column;align-items:stretch;gap:0;padding:8px var(--g) 20px;border-bottom:1px solid var(--cream3)}
   .nav.open{display:flex}.nav a{padding:14px 0;border-bottom:1px solid var(--cream2)}.nav .tel{margin-top:14px;text-align:center}
-  .hero-g,.state,.close{grid-template-columns:1fr}.hero-g .model{order:-1}
+  .hero-g,.state,.close{grid-template-columns:1fr}
   .stats-g{grid-template-columns:1fr 1fr}.st:nth-child(odd){border-left:0}.st:nth-child(-n+2){border-bottom:1px solid var(--cream2)}
   .cards{grid-template-columns:1fr}.ph-g{grid-template-columns:1fr 1fr}.ph:first-child{grid-column:1/-1;aspect-ratio:16/9}
   .ftr-in{grid-template-columns:1fr}
 }
 @media (max-width:560px){.pl{grid-template-columns:1fr}.ph-g{grid-template-columns:1fr}.btn{width:100%}}
+
+.nav .pay{background:var(--terra);color:#fff;padding:12px 18px;border-radius:999px}
+.quickbar{display:none}
+@media (max-width:920px){.quickbar{display:grid;grid-template-columns:1.5fr 1fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:90;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(251,247,240,.94);backdrop-filter:blur(10px);border-top:1px solid rgba(0,0,0,.08)}.quickbar a{display:flex;align-items:center;justify-content:center;min-height:52px;border-radius:999px;text-decoration:none;font:700 16px/1 var(--sans)}.qb-call{background:var(--ink);color:#fff}.qb-pay{background:var(--terra);color:#fff}body{padding-bottom:84px}.nav .pay{text-align:center;margin-top:8px}}
 </style>
 </head>
 <body>
@@ -108,6 +113,7 @@ p{margin:0}a{color:inherit}img{display:block;max-width:100%}
   <button class="tog nav-toggle" type="button" aria-label="Menu" aria-controls="site-nav" aria-expanded="false"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="8" x2="21" y2="8"/><line x1="3" y1="16" x2="21" y2="16"/></svg></button>
   <nav class="nav" id="site-nav">
     <a href="../spaces-parking.html">Spaces &amp; Parking</a><a href="../how-to-pay.html">How to Pay</a><a href="../about.html">About</a><a href="../contact.html">Contact</a>
+    <a class="pay" href="../how-to-pay.html">Pay</a>
     <a class="tel" href="tel:8633246591">863-324-6591</a>
   </nav>
 </div></header>
@@ -163,6 +169,10 @@ p{margin:0}a{color:inherit}img{display:block;max-width:100%}
   <div><div class="h">Pages</div><a href="../spaces-parking.html">Spaces &amp; Parking</a><a href="../how-to-pay.html">How to Pay</a><a href="../about.html">About</a><a href="../contact.html">Contact</a></div>
   <div><div class="h">Office</div><a href="tel:8633246591" style="color:#fff;font-weight:800;font-size:22px">863-324-6591</a><span>1771 Executive Rd<br>Winter Haven, FL 33884</span><span>Office hours Monday to Friday, 9am to 4pm</span></div>
 </div><div class="ftr-b"><div><span>&copy; Vineland Development Corp.</span><span><a href="../privacy.html">Privacy Policy</a><a href="../sms-terms.html">SMS Terms</a></span></div></div></footer>
+<div class="quickbar" aria-label="Call or pay">
+  <a class="qb-call" href="tel:8633246591">Call 863-324-6591</a>
+  <a class="qb-pay" href="../how-to-pay.html">Pay</a>
+</div>
 <script src="../js/nav.js"></script>
 </body>
 </html>
