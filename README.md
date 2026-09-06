@@ -1,6 +1,6 @@
 # Vineland Development — marketing website
 
-A small, static five-page website for **Vineland Development**, a family-run
+A small, static eight-page website for **Vineland Development**, a family-run
 flex-space, storage, and parking facility in Winter Haven, Florida. Plain
 HTML + CSS with one tiny vanilla-JS file for the mobile menu — **no build
 step, no framework, no server code.** Open any `.html` file in a browser and
@@ -19,6 +19,8 @@ GitHub Pages address for this repo; the custom domain
 | `how-to-pay.html` | How to Pay |
 | `about.html` | About |
 | `contact.html` | Contact |
+| `privacy.html` | Privacy policy (carrier requirement for texting) |
+| `sms-terms.html` | SMS terms (carrier requirement for texting) |
 | `404.html` | Not-found page |
 
 Shared styles are in `css/style.css`; the mobile-menu toggle is `js/nav.js`.
@@ -35,20 +37,22 @@ change wording.
 
 ## Adding photos
 
-Photo spots currently show light-gray placeholder blocks. To drop in a real
-photo:
+Photo spots currently render as quiet stone-colored blocks with a small
+caption, so the pages look finished before any photos exist. To drop in a
+real photo:
 
 1. Put the image file in the `images/` folder (e.g. `images/home-hero.jpg`).
-   The expected filenames are listed in `images/.gitkeep` and in a comment
-   right above each photo spot in the HTML.
-2. In the page, find the matching `<!-- Photo slot: ... -->` comment and
-   replace the placeholder line
-   `<div class="img-slot">Facility photo …</div>`
-   with
-   `<img src="images/home-hero.jpg" alt="Short description of the photo">`.
-3. Commit and push. That's the whole job — one file dropped in, one line
-   changed.
+   The expected filename is in a comment right above each photo spot in
+   the HTML.
+2. In the page, find the matching `<!-- Photo slot: ... -->` comment. The
+   line under it looks like
+   `<figure class="ph r-45" data-label="The property, Executive Road"></figure>`.
+   Put an `<img>` inside it and add `has-img` to the class, like this:
+   `<figure class="ph r-45 has-img"><img src="images/home-hero.jpg" alt="Row of drive-up units"></figure>`
+3. Commit and push. That's the whole job.
 
+The `r-45`, `r-43`, `r-32`, `r-11` classes set the shape of the box (4:5,
+4:3, 3:2, square). The photo is cropped to fit, so leave the class alone.
 Keep photos reasonably sized (roughly 1600px wide is plenty) so pages stay
 fast on phones.
 
@@ -58,12 +62,12 @@ Two things are intentionally left as placeholders and get pasted in once
 they're ready:
 
 - **Online card payment link.** On `how-to-pay.html`, the card section shows a
-  gray "Online card payments coming soon — call the office" button. When the
-  secure payment page (Stripe) is live, replace that `<span class="btn-soon">`
+  dashed "Online payments coming soon" button. When the secure payment page
+  is live and linking it is approved, replace that `<span class="btn-soon">`
   with a real link to it.
-- **Card processing fee percentage.** The same section says
-  "**[X]% processing fee**". Replace `[X]` with the real number when it's
-  confirmed. (It is deliberately not filled in yet — do not guess it.)
+- **Card processing fee wording.** The same section says 3%, credit cards
+  only. That came from the office payment policy notes, not from a signed
+  document. Confirm before the page goes live.
 
 ## Publishing changes
 

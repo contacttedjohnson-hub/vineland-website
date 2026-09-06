@@ -1,20 +1,27 @@
-/* Vineland Development — minimal nav toggle for the mobile hamburger.
-   No framework. On desktop the CSS handles the How-to-Pay hover dropdown;
-   this only opens/closes the collapsed nav panel on small screens. */
+/* Vineland Development, mobile nav toggle.
+   No framework. On desktop the CSS handles the How to Pay hover menu;
+   this only opens and closes the collapsed nav panel on small screens. */
 (function () {
   var toggle = document.querySelector('.nav-toggle');
   var nav = document.getElementById('site-nav');
   if (!toggle || !nav) return;
 
-  toggle.addEventListener('click', function () {
-    var open = nav.classList.toggle('open');
+  function setOpen(open) {
+    nav.classList.toggle('open', open);
     toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+  }
+
+  toggle.addEventListener('click', function () {
+    setOpen(!nav.classList.contains('open'));
   });
 
-  // Close the panel after tapping a real navigation link (not the
-  // How-to-Pay parent, which should still navigate on tap per spec).
+  // Close after tapping any link in the panel.
   nav.addEventListener('click', function (e) {
-    var a = e.target.closest('a');
-    if (a) nav.classList.remove('open');
+    if (e.target.closest('a')) setOpen(false);
+  });
+
+  // Escape closes it too.
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && nav.classList.contains('open')) setOpen(false);
   });
 })();
